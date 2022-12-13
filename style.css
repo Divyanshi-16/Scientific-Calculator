@@ -1,0 +1,123 @@
+body {
+    color: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+    background: var(--primary-color);
+}
+
+.container {
+    margin-left: 1.8em;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 13px 13px 20px #cbced1,
+        -13px -13px 20px var(--primary-color);
+}
+
+.content {
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#icon{
+    width: 40px;
+    cursor: pointer; 
+}
+
+:root{
+    --primary-color: #ecf0f3;
+    --secondary-color: #333333; 
+}
+
+.dark-theme{
+    --primary-color: #333333;
+    --secondary-color: #ecf0f3;  
+}
+
+#rad{
+    cursor: pointer;
+}
+
+#deg{
+    cursor: pointer;
+}
+
+.active-angle{
+    background-color: rgb(237, 230, 22);
+    color: #333;
+}
+
+.row button {
+    width: 65px;
+    height: 35px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 4px;
+    transition: .1s;
+    box-shadow: 5px 5px 8px var(--secondary-color),
+        -5px -5px 8px var(--primary-color);
+}
+
+.row button:hover {
+    box-shadow: inset 5px 5px 8px var(--secondary-color),
+        inset -5px -5px 8px var(--primary-color);
+    /*background: var(--primary-color);*/
+}
+
+.display #screen {
+    color: var(--secondary-color);
+    margin-bottom: .5em;
+    width: auto;
+    height: 100px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: var(--primary-color);
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+        inset -8px -8px 8px var(--primary-color);
+}
+
+#eval {
+    background: #33ccff;
+    color: #fff;
+    box-shadow: inset 5px 5px 8px #66d9ff,
+        inset -5px -5px 8px #00ace6;
+}
+
+#eval:hover {
+    box-shadow: inset 5px 5px 8px #00ace6,
+        inset -5px -5px 8px #00ace6;
+}
+
+#ac {
+    background: #33cc33;
+    color: #fff;
+}
+
+#ac:hover {
+    box-shadow: inset 5px 5px 8px #2eb82e,
+        inset -5px -5px 8px #33cc33;
+}
+
+#ce {
+    background: #ff3399;
+    color: #fff;
+}
+
+#ce:hover {
+    box-shadow: inset 5px 5px 8px #e60073,
+        inset -5px -5px 8px #ff3399;
+}
